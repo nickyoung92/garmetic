@@ -1,0 +1,34 @@
+.blog-crv .item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.block-sec .testim-box .slick-dots li button {
+  display: block;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider .social-icon a {
+  margin: 0 3px;
+}
+.navbar .navbar-nav .nav-link,
+.video .vid .vid-butn .icon,
+.video-wrapper .vid .vid-butn .icon {
+  cursor: pointer;
+}
+.block-sec .vid-area {
+  z-index: 99;
+}
+.div-tooltip-tit,
+.div-tooltip-sub {
+  display: block;
+  padding: 0;
+}
+section.testimonials {
+  overflow: hidden;
+}
+.contact-page .pages-header {
+    overflow: hidden;
+}
+

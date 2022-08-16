@@ -1,0 +1,46 @@
+{
+  "name": "CoLabs",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next build && next export",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "engine": {
+    "package": "ansi-styles@3.2.1",
+    "required": "node: '>=16.0.0'"
+  },
+  "dependencies": {
+    "@coinbase/wallet-sdk": "^3.0.8",
+    "@material-ui/icons": "^4.11.2",
+    "@metamask/detect-provider": "^1.2.0",
+    "@react-three/drei": "^9.14.3",
+    "@react-three/fiber": "^8.0.27",
+    "@walletconnect/web3-provider": "^1.7.7",
+    "isotope-layout": "^3.0.6",
+    "keccak256": "^1.0.6",
+    "merkletreejs": "^0.2.31",
+    "next": "^12.1.5",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.3.1",
+    "react-dom": "^18.2.0",
+    "react-modal-video": "^1.2.8",
+    "react-scroll": "^1.8.4",
+    "react-slick": "0.28.1",
+    "react-tsparticles": "1.40.0",
+    "react-visibility-sensor": "5.1.1",
+    "sass": "1.45.0",
+    "slick-carousel": "1.8.1",
+    "swiper": "7.3.0",
+    "three": "^0.142.0",
+    "timeline": "3.4.1",
+    "web3": "^1.7.3",
+    "web3modal": "^1.9.7"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-next": "12.0.4"
+  }
+}

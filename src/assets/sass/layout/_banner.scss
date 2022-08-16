@@ -1,0 +1,75 @@
+.banner {
+    @extend %of-hidden;
+    padding-block: 75px;
+    background: #8E2DE2;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #4A00E0, #8E2DE2);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    @include breakpoint(lg) {
+        padding-block: 120px;
+    }
+
+
+
+    &__content {
+        @extend %mb-50;
+        text-align: center;
+
+        // @include breakpoint(lg) {
+        //     margin-bottom: 50px;
+        // }
+
+        h1 {
+            @extend %mb-5;
+            @include font-size(65px);
+            text-transform: capitalize;
+
+            @include breakpoint(xxl) {
+                max-inline-size: 90%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+        }
+
+        h1,
+        p {
+            color: $white-color;
+        }
+
+        p {
+            @extend %mb-45;
+            @include font-size(18px);
+            line-height: 1.65;
+        }
+    }
+
+    &__thumb {
+        &-slider {
+            @extend %of-hidden;
+        }
+
+        &-item {
+            @extend %of-hidden;
+            border-radius: 5px;
+
+            img {
+                @extend %w-100;
+            }
+        }
+    }
+
+    &__slider {
+        border-radius: 20px;
+    }
+}
+
+.bg-attach--fixed {
+    @include breakpoint(lg) {
+        background-attachment: fixed;
+    }
+
+}

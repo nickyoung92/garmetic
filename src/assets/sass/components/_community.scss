@@ -1,0 +1,24 @@
+.community {
+
+    &__content {
+        h2 {
+            @extend %mb-10;
+        }
+
+        p {
+            @extend %mb-20;
+
+            @include breakpoint(lg) {
+                margin-bottom: 30px;
+            }
+        }
+
+        .default-btn {
+            background: $white-color;
+
+            span {
+                color: $theme-color;
+            }
+        }
+    }
+}

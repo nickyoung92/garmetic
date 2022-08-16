@@ -1,0 +1,40 @@
+.team {
+    @extend %of-hidden;
+    @include background-cover;
+
+    &__item {
+        @extend %of-hidden;
+        @include add-prefix(transition, $transition);
+        background-color: $body-color;
+        border-radius: 20px;
+        text-align: center;
+        padding: 20px;
+
+        @include hover {
+            @include add-prefix(transform, translateY(-5px));
+        }
+    }
+
+    &__thumb {
+        @extend %mb-20;
+
+        img {
+            border-radius: 4px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        h4 {
+            a {
+                color: $white-color;
+            }
+        }
+
+        p {
+            @extend %mb-10;
+            color: $text-color;
+        }
+    }
+}

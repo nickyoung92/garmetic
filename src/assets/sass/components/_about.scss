@@ -1,0 +1,21 @@
+.about {
+    @extend %of-hidden;
+
+    &__thumb {
+        @extend %text-center;
+
+        &--floating {
+            @include animation(floating 3s ease-in-out infinite alternate);
+        }
+    }
+
+    &__content {
+        h2 {
+            @extend %mb-30;
+        }
+
+        p {
+            @include font-size(18px);
+        }
+    }
+}

@@ -1,0 +1,117 @@
+.roadmap {
+    @extend %of-hidden;
+
+    &__item {
+        padding: 25px;
+        background-color: $body-color;
+
+        @include breakpoint(md) {
+            padding: 35px;
+        }
+        //use no-border class to remove the border from item
+        &:not(.no-border) {
+            border: 1px solid rgba($theme-color, $alpha: .80);
+            box-shadow: inset 0 0 15px $theme-color;
+            border-radius: 20px;
+        }
+    }
+
+    &__inner {
+        @extend %flex;
+        @extend %align-items-center;
+        @extend %justify-between;
+        @extend %p-rel;
+        gap: 40px;
+        flex-direction: column;
+        text-align: center;
+
+        @include breakpoint(md) {
+            flex-direction: row;
+            text-align: left;
+            gap: 20px;
+
+
+        }
+
+    }
+
+    &__thumb {
+        @include box(150px);
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        box-shadow: inset 0 0 30px rgba($secondary-color, $alpha: .80);
+
+        span {
+            @include font-size(36px);
+            font-weight: 700;
+            color: $white-color;
+        }
+    }
+
+    &__content {
+        @include breakpoint(md) {
+            width: calc(100% - 190px);
+        }
+
+        h4 {
+            margin-bottom: 1rem;
+        }
+
+        p {
+            @extend %mb-0;
+            max-inline-size: 92ch;
+
+        }
+    }
+
+    .col-lg-8 {
+        // &:nth-child(odd) {
+        //     .roadmap__inner {
+        //         @include breakpoint(md) {
+        //             &:after {
+        //                 position: absolute;
+        //                 content: "";
+        //                 background-image: url(../images/roadmap/right-arrow.svg);
+        //                 background-size: 100% 100%;
+        //                 height: 100px;
+        //                 width: 100px;
+        //                 bottom: -70px;
+        //                 right: -80px;
+        //                 z-index: -1;
+        //             }
+        //         }
+        //     }
+        // }
+
+        // &:nth-child(even) {
+        //     .roadmap__inner {
+        //         flex-direction: row-reverse;
+
+        //         @include breakpoint(md) {
+        //             &:after {
+        //                 position: absolute;
+        //                 content: "";
+        //                 background-image: url(../images/roadmap/left-arrow.svg);
+        //                 background-size: 100% 100%;
+        //                 height: 100px;
+        //                 width: 100px;
+        //                 bottom: -70px;
+        //                 left: -80px;
+        //                 z-index: -1;
+        //             }
+        //         }
+        //     }
+        // }
+
+        // &:last-child {
+        //     .roadmap__inner {
+        //         @include breakpoint(md) {
+        //             &:after {
+        //                 display: none;
+        //             }
+        //         }
+        //     }
+        // }
+    }
+}
